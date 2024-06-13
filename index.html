@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Git e Uso no Projeto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        code {
+            background: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comandos Git e Uso no Projeto</h1>
+    </header>
+
+    <section>
+        <h2>Configuração e Acesso ao Repositório GitHub</h2>
+        <p>Para configurar o Git com seu usuário GitHub, siga os passos abaixo:</p>
+        <pre><code>git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@example.com"
+git config --global init.defaultBranch main</code></pre>
+        <p>Para clonar um repositório GitHub:</p>
+        <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+    </section>
+
+    <section>
+        <h2>Comandos Git</h2>
+
+        <h3>git init</h3>
+        <p>Inicializa um novo repositório Git.</p>
+        <pre><code>git init</code></pre>
+
+        <h3>git clone</h3>
+        <p>Clona um repositório existente.</p>
+        <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre>
+
+        <h3>git branch</h3>
+        <p>Gerencia branches no repositório.</p>
+        <pre><code>git branch</code></pre>
+        <p>Para criar uma nova branch:</p>
+        <pre><code>git branch nome-da-branch</code></pre>
+
+        <h3>git checkout</h3>
+        <p>Troca de branch ou restaura arquivos no repositório.</p>
+        <pre><code>git checkout nome-da-branch</code></pre>
+
+        <h3>git status</h3>
+        <p>Mostra o estado dos arquivos no repositório.</p>
+        <pre><code>git status</code></pre>
+
+        <h3>git diff</h3>
+        <p>Mostra as diferenças entre os arquivos no repositório.</p>
+        <pre><code>git diff</code></pre>
+
+        <h3>git add</h3>
+        <p>Adiciona arquivos ao índice (staging area).</p>
+        <pre><code>git add arquivo.txt</code></pre>
+        <p>Para adicionar todos os arquivos modificados:</p>
+        <pre><code>git add .</code></pre>
+
+        <h3>git commit</h3>
+        <p>Registra as mudanças no repositório.</p>
+        <pre><code>git commit -m "Mensagem do commit"</code></pre>
+
+        <h3>git push</h3>
+        <p>Envia as mudanças para o repositório remoto.</p>
+        <pre><code>git push origin nome-da-branch</code></pre>
+
+        <h3>git pull</h3>
+        <p>Atualiza o repositório local com as mudanças do repositório remoto.</p>
+        <pre><code>git pull origin nome-da-branch</code></pre>
+
+        <h3>git revert</h3>
+        <p>Desfaz um commit específico.</p>
+        <pre><code>git revert id-do-commit</code></pre>
+
+        <h3>git merge</h3>
+        <p>Combina mudanças de diferentes branches.</p>
+        <pre><code>git merge nome-da-branch</code></pre>
+
+        <h3>git stash</h3>
+        <p>Armazena mudanças temporariamente.</p>
+        <pre><code>git stash</code></pre>
+        <p>Para aplicar mudanças armazenadas:</p>
+        <pre><code>git stash apply</code></pre>
+
+        <h3>git rm</h3>
+        <p>Remove arquivos do repositório.</p>
+        <pre><code>git rm arquivo.txt</code></pre>
+
+        <h3>git config</h3>
+        <p>Configura opções de usuário e repositório.</p>
+        <pre><code>git config --global user.name "Seu Nome"</code></pre>
+
+        <h3>git reset</h3>
+        <p>Reseta mudanças no índice e na árvore de trabalho.</p>
+        <pre><code>git reset --hard</code></pre>
+
+        <h3>git remote</h3>
+        <p>Gerencia repositórios remotos.</p>
+        <pre><code>git remote add origin https://github.com/usuario/repositorio.git</code></pre>
+
+        <h3>git fetch</h3>
+        <p>Baixa mudanças do repositório remoto sem aplicá-las.</p>
+        <pre><code>git fetch origin</code></pre>
+
+        <h3>git show</h3>
+        <p>Mostra detalhes sobre um objeto Git (commit, tag, etc.).</p>
+        <pre><code>git show id-do-commit</code></pre>
+
+        <h3>git help</h3>
+        <p>Mostra ajuda sobre comandos Git.</p>
+        <pre><code>git help comando</code></pre>
+
+        <h3>git rebase</h3>
+        <p>Reaplica commits em cima de outra base.</p>
+        <pre><code>git rebase nome-da-branch</code></pre>
+
+        <h3>git blame</h3>
+        <p>Mostra o autor de cada linha de um arquivo.</p>
+        <pre><code>git blame arquivo.txt</code></pre>
+
+        <h3>git tag</h3>
+        <p>Marca commits com uma tag específica.</p>
+        <pre><code>git tag -a v1.0 -m "Versão 1.0"</code></pre>
+    </section>
+</body>
+</html>
